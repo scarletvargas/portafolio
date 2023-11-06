@@ -6,7 +6,17 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#281AEF",
+        secondary: "#07042F",
+        gray100: "#EBEBEB",
+        gray200: "#848297",
+        gray300: "#656572",
+        softblue100: "#DEDBFE",
+        softblue200: "#9D9ACB",
+      },
+    },
   },
   plugins: [],
 }
