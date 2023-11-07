@@ -1,7 +1,11 @@
-export default function Home() {
+import Hero from "@/Components/HomePage/Hero";
+
+function Home() {
   return (
-    <main className="min-h-screen">
-      Portafolio
-    </main>
-  )
+    <div className="overflow-hidden">
+      <Hero />
+    </div>
+  );
 }
+
+export default Home;

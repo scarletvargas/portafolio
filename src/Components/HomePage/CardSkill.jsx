@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const CardSkill = () => {
+function CardSkill () {
   return (
     <div className="flex flex-col items-start gap-6 p-10 bg-[#F4F4F6]">
       <div className="flex items-center justify-center p-"><Image /></div>
@@ -9,3 +9,5 @@ export const CardSkill = () => {
     </div>
   );
 };
+
+export default CardSkill;
