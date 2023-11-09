@@ -13,7 +13,7 @@ function Footer() {
           Ready to <span className="text-[#85DEFF]">Build Awesome</span>{" "}
           Project?
         </h3>
-        <p className="max-w-[450px] text-gray200 text-base/7">
+        <p className="max-w-[450px] text-center text-gray200 text-base/7">
           Memulai sebuah projek dengan riset dan memvalidasi ideas dengan
           usability-testing agar maksimal.
         </p>
