@@ -20,6 +20,13 @@ module.exports = {
         'md': '810px',
         'xl': '1200px',
       },
+      boxShadow: {
+        '3xl': '0 4px 30px 4px rgba(101, 101, 114, 0.2)',
+      },
+      borderRadius: {
+        '4xl': '22px',
+        '5xl': '26px',
+      },
     },
   },
   plugins: [],
