@@ -2,11 +2,11 @@ export const javascript = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="icon icon-tabler icon-tabler-brand-javascript"
-      width={24}
-      height={24}
+      className="icon icon-tabler icon-tabler-brand-javascript stroke-secondary"
+      width={38}
+      height={38}
       viewBox="0 0 24 24"
-      stroke-width={2}
+      strokeWidth="1.5"
       stroke="currentColor"
       fill="none"
       strokeLinecap="round"
