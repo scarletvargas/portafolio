@@ -26,6 +26,9 @@ module.exports = {
         softblue100: "#DEDBFE",
         softblue200: "#9D9ACB",
       },
+      flex: {
+        2: "2 1 70%",
+      },
       screens: {
         md: "810px",
         xl: "1200px",
