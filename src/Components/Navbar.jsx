@@ -15,7 +15,7 @@ function Navbar() {
           <Link className="hover:text-primary" href="/#skills">Skills</Link>
         </li>
         <li>
-          <Link className="hover:text-primary" href="/#portfolios">Portfolios</Link>
+          <Link className="hover:text-primary" href="/#projects">Projects</Link>
         </li>
         <li>
           <Link href="/contact">
