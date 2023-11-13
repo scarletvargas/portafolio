@@ -1,6 +1,6 @@
-function CardSkill({ title, description, iconSvg: Icon }) {
+function CardSkill({ title, description, iconSvg: Icon, width }) {
   return (
-    <div className="group flex flex-col items-start gap-6 p-10 bg-[#F4F4F6] hover:bg-secondary rounded-5xl">
+    <div className={`group flex flex-col items-start gap-6 p-10 bg-[#F4F4F6] hover:bg-secondary rounded-5xl w-[330px] ${width}`}>
       <div className="flex items-center justify-center w-[65px] h-[65px] bg-softblue100 group-hover:bg-primary rounded-4xl">
         <Icon />
       </div>
