@@ -20,7 +20,7 @@ import { wordpress } from "@/Icons/wordpress";
 function MarqueeHero() {
   return (
     <div className="mx-auto max-w-[900px]">
-      <div className="overflow-x-hidden px-6 w-full relative before:bg-gradient-to-r after:bg-gradient-to-r after:from-white before:from-white before:z-20 after:z-20 before:absolute after:absolute before:h-full after:h-full before:w-2/12 after:w-2/12 before:content-[''] after:content-[''] before:left-0 before:top-0 after:right-0 after:top-0 after:rotate-180">
+      <div className="overflow-x-hidden px-6 w-full relative before:bg-gradient-to-r after:bg-gradient-to-r after:from-white before:from-white after:dark:from-navy200 before:dark:from-navy200 before:z-20 after:z-20 before:absolute after:absolute before:h-full after:h-full before:w-2/12 after:w-2/12 before:content-[''] after:content-[''] before:left-0 before:top-0 after:right-0 after:top-0 after:rotate-180">
         <div className="flex gap-6">
           <div className="flex shrink-0 items-center flex-row gap-6 animate-marquee">
             <ItemMarqueeHero text="Javascript" iconSvg={javascript} />

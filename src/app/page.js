@@ -5,7 +5,7 @@ import SectionSkills from "@/Components/HomePage/SectionSkills";
 
 function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden dark:bg-navy200">
       <Hero />
       <MarqueeHero />
       <SectionSkills />
