@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import Footer from "@/Components/Footer";
-import Navbar from "@/Components/Navbar";
+import Navbar from "@/Components/Navbar/Navbar";
 import ScrollToTopButton from "@/Components/ScrollToTopButton";
 import "./globals.css";
 

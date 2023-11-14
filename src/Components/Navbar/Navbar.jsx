@@ -1,11 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import ButtonSecond from "./ButtonSecond";
+import ButtonSecond from "../ButtonSecond";
 import ItemNav from "./ItemNav";
 import { Menu } from "@/Icons/Menu";
 import { Close } from "@/Icons/Close";
-import ChangeTheme from "./Navbar/ChangeTheme";
+import ChangeTheme from "./ChangeTheme";
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ function Navbar() {
     if (isMenuOpen) {
       document.addEventListener("click", handleClickOutside);
     }
-    
+
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
