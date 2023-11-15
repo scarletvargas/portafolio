@@ -32,7 +32,7 @@ module.exports = {
         white100: "#F4F4F6",
       },
       flex: {
-        2: "2 1 70%",
+        2: "2 1 60%",
       },
       screens: {
         md: "810px",
