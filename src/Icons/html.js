@@ -2,7 +2,7 @@ export const html = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="icon icon-tabler icon-tabler-brand-html5 stroke-secondary"
+      className="stroke-secondary"
       width={38}
       height={38}
       viewBox="0 0 24 24"

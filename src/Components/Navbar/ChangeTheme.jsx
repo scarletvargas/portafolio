@@ -7,12 +7,13 @@ function ChangeTheme({ className }) {
   // Initialize the theme state based on localStorage or system preference
   const [theme, setTheme] = useState(() => {
     // Check if the system prefers a dark color scheme
-    const systemPrefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
+    const systemPrefersDark =
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    // Retrieve the theme from localStorage
-    const localStorageTheme = localStorage.getItem("theme");
+    // Check if localStorage is available
+    const localStorageTheme =
+      typeof window !== "undefined" && localStorage.getItem("theme");
 
     // Set the initial theme based on localStorage or system preference
     if (
@@ -27,17 +28,20 @@ function ChangeTheme({ className }) {
 
   // Effect to update the HTML element class and localStorage when theme changes
   useEffect(() => {
-    const htmlElement = document.querySelector("html");
+    // Check if the window object is defined
+    if (typeof window !== "undefined") {
+      const htmlElement = document.querySelector("html");
 
-    // Apply or remove the 'dark' class based on the selected theme
-    if (theme === "dark") {
-      htmlElement.classList.add("dark");
-    } else {
-      htmlElement.classList.remove("dark");
+      // Apply or remove the 'dark' class based on the selected theme
+      if (theme === "dark") {
+        htmlElement.classList.add("dark");
+      } else {
+        htmlElement.classList.remove("dark");
+      }
+
+      // Update the localStorage when theme changes
+      localStorage.setItem("theme", theme);
     }
-
-    // Update the localStorage when theme changes
-    localStorage.setItem("theme", theme);
   }, [theme]);
 
   // Function to handle theme change on button click

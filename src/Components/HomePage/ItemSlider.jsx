@@ -1,7 +1,18 @@
 import Image from "next/image";
 import ButtonPrimary from "../ButtonPrimary";
+import Link from "next/link";
 
-function ItemSlider({ index, isFirst, isLast, handleHover, isClasses, imgProject, nameProject, description }) {
+function ItemSlider({
+  index,
+  isFirst,
+  isLast,
+  handleHover,
+  isClasses,
+  imgProject,
+  nameProject,
+  description,
+  href,
+}) {
   const imageClass = isFirst ? "rounded-l-5xl" : isLast ? "rounded-r-5xl" : "";
   return (
     <div
@@ -12,6 +23,7 @@ function ItemSlider({ index, isFirst, isLast, handleHover, isClasses, imgProject
     >
       <div className="h-[500px] flex-col justify-center items-center">
         <Image
+          alt={nameProject}
           src={imgProject}
           placeholder="blur"
           className={`h-full ${
@@ -26,7 +38,9 @@ function ItemSlider({ index, isFirst, isLast, handleHover, isClasses, imgProject
         <p className="py-2 px-3 bg-white text-secondary text-sm leading-[18px] font-normal rounded-xl shadow-3xl">
           {description}
         </p>
-        <ButtonPrimary text="Explore More" />
+        <Link href={href} target="_black">
+          <ButtonPrimary text="Explore More" />
+        </Link>
       </div>
     </div>
   );

@@ -2,11 +2,11 @@ export const Sun = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="icon icon-tabler icon-tabler-brightness-2 stroke-white hover:stroke-primary"
+      className="stroke-white hover:stroke-primary"
       width={28}
       height={28}
       viewBox="0 0 24 24"
-      stroke-width={2}
+      strokeWidth={2}
       stroke="currentColor"
       fill="none"
       strokeLinecap="round"
