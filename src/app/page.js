@@ -1,3 +1,4 @@
+import Carousel from "@/Components/HomePage/Carousel";
 import Hero from "@/Components/HomePage/Hero";
 import MarqueeHero from "@/Components/HomePage/MarqueeHero";
 import SectionProjects from "@/Components/HomePage/SectionProjects";
@@ -10,6 +11,7 @@ function Home() {
       <MarqueeHero />
       <SectionSkills />
       <SectionProjects />
+      <Carousel />
     </div>
   );
 }
