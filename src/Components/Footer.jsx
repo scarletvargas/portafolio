@@ -9,14 +9,14 @@ function Footer() {
     <footer className="bg-navy200 dark:bg-softblue200 text-white dark:text-secondary flex flex-col items-center w-auto pt-[70px]">
       <div className="max-w-[350px] md:max-w-[600px] flex flex-col items-center justify-center pb-24 gap-7">
         <h3 className="text-center font-bold text-[30px] md:text-[50px] leading-[38px] md:leading-[70px]">
-          Let's build an{" "}
+          Let&apos;s build an{" "}
           <span className="text-sky dark:text-primary">Amazing Project</span>{" "}
           Together
         </h3>
         <p className="text-center text-gray200 dark:text-gray400 text-base/7">
           Along with the newest technologies on the market to create attractive
           user interfaces! Do you have questions, proposals or just want to
-          chat? I'm just a click away. Let's make ideas come true together!
+          chat? I&apos;m just a click away. Let&apos;s make ideas come true together!
         </p>
         <ButtonPrimary text="Contact Me" />
         {/* <marquee></marquee> */}
