@@ -15,7 +15,7 @@ export default function NotFound() {
           href="/"
           className="text-gray400 dark:text-gray200 hover:text-primary dark:hover:text-sky"
         >
-          Volver al inicio
+          Go back to home page
         </Link>
         <Link
           target="_blank"
