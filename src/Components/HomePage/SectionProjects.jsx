@@ -11,7 +11,7 @@ function SectionProjects() {
           FEATURED WORK
         </p>
         <h3 className="text-secondary dark:text-white font-bold text-center text-[28px] md:text-[30px] xl:text-[36px] leading-[38px] md:leading-10 xl:leading-[46px] max-w-[500px]">
-          I've Contributed Efforts to Achieve Bigger Results
+          I&apos;ve Contributed Efforts to Achieve Bigger Results
         </h3>
       </div>
       <Slider />
