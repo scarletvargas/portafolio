@@ -20,25 +20,25 @@ function SectionSkills() {
           title='Responsive User Interfaces'
           description='Ability to transform designs into code, ensuring that interfaces are visually appealing and functional on various devices and screens.'
           iconSvg={Code}
-          width='md:w-[400px] xl:w-[570px]'
+          width='md:w-[380px] xl:w-[570px]'
         />
         <CardSkill
           title='Adaptability and Continuous Learning'
           description='Willingness and ability to address challenges, creatively solve problems, and embrace new technologies.'
           iconSvg={Rocket}
-          width='md:w-[290px] xl:w-[400px]'
+          width='md:w-[310px] xl:w-[400px]'
         />
         <CardSkill
           title='Version and Repository Management'
           description='Proficient in using version control systems, such as Git, and managing repositories to effectively track and collaborate on code.'
           iconSvg={Versions}
-          width='md:w-[290px] xl:w-[400px]'
+          width='md:w-[310px] xl:w-[400px]'
         />
         <CardSkill
           title='Frontend Frameworks and Libraries'
           description='Utilization of frontend frameworks and libraries, such as React, Next.js, Redux, TailwindCss, Formik, React-Hook-Form, to streamline the development of complex web applications.'
           iconSvg={Tools}
-          width='md:w-[400px] xl:w-[570px]'
+          width='md:w-[380px] xl:w-[570px]'
         />
       </div>
     </section>

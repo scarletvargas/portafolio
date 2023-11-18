@@ -1,7 +1,7 @@
 function CardSkill({ title, description, iconSvg: Icon, width }) {
   return (
     <div
-      className={`group flex flex-col items-start gap-6 p-10 bg-white100 dark:bg-secondary hover:bg-secondary dark:hover:bg-white100 rounded-5xl w-[330px] ${width} h-auto md:h-[400px] xl:h-[335px]`}
+      className={`group flex flex-col items-start gap-6 p-10 bg-white100 dark:bg-secondary hover:bg-secondary dark:hover:bg-white100 rounded-5xl w-[330px] ${width} h-auto md:h-[410px] xl:h-[355px]`}
     >
       <div className="flex items-center justify-center w-[65px] h-[65px] bg-softblue100 dark:bg-primary group-hover:bg-primary dark:group-hover:bg-softblue100 rounded-4xl">
         <Icon
