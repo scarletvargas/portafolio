@@ -1,21 +1,21 @@
 export const ArrowUp = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="stroke-white"
+      xmlns='http://www.w3.org/2000/svg'
+      className='stroke-white'
       width={24}
       height={24}
-      viewBox="0 0 24 24"
+      viewBox='0 0 24 24'
       strokeWidth={2}
-      stroke="currentColor"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      stroke='currentColor'
+      fill='none'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-      <path d="M12 5l0 14"></path>
-      <path d="M18 11l-6 -6"></path>
-      <path d="M6 11l6 -6"></path>
+      <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+      <path d='M12 5l0 14'></path>
+      <path d='M18 11l-6 -6'></path>
+      <path d='M6 11l6 -6'></path>
     </svg>
   );
 };

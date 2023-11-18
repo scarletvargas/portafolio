@@ -1,19 +1,19 @@
 export const ArrowRight = () => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="stroke-white dark:stroke-secondary"
+      xmlns='http://www.w3.org/2000/svg'
+      className='stroke-white dark:stroke-secondary'
       width={28}
       height={28}
-      viewBox="0 0 24 24"
+      viewBox='0 0 24 24'
       strokeWidth={2}
-      stroke="currentColor"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      stroke='currentColor'
+      fill='none'
+      strokeLinecap='round'
+      strokeLinejoin='round'
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M9 6l6 6l-6 6" />
+      <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+      <path d='M9 6l6 6l-6 6' />
     </svg>
   );
 };
