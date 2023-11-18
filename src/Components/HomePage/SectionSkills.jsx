@@ -7,15 +7,15 @@ import { Rocket } from '@/Icons/Rocket';
 function SectionSkills() {
   return (
     <section id='skills' className='flex flex-col items-center justify-center'>
-      <div className='w-[320px] md:w-[720px] xl:w-[1130px] flex flex-col items-start justify-center gap-2.5 py-[30px] md:pt-[50px] xl:pt-[70px]'>
+      <div className='w-[350px] md:w-[720px] xl:w-[1130px] flex flex-col items-start justify-center gap-2.5 py-[30px] md:pt-[50px] xl:pt-[70px]'>
         <div className='flex flex-col gap-5 items-start justify-center'>
           <p className='font-bold text-sm leading-[14px] text-primary dark:text-sky'>ABOUT ME?</p>
-          <h3 className='max-w-[350px] md:max-w-sm font-bold text-secondary dark:text-white text-[28px] leading-[38px] md:text-3xl/10 xl:text-[36px] xl:leading-[46px]'>
-            Frontend Developer Are My Skills
+          <h3 className='max-w-[380px] xl:max-w-md font-bold text-secondary dark:text-white text-[28px] leading-[38px] md:text-3xl/10 xl:text-[36px] xl:leading-[46px]'>
+            Frontend Development Is My Skill
           </h3>
         </div>
       </div>
-      <div className='flex flex-col items-center justify-center md:flex-row flex-wrap gap-[30px] w-[320px] md:w-[720px] xl:w-[1130px] '>
+      <div className='flex flex-col items-center justify-center md:flex-row flex-wrap gap-[30px] w-[350px] md:w-[720px] xl:w-[1130px] '>
         <CardSkill
           title='Responsive User Interfaces'
           description='Ability to transform designs into code, ensuring that interfaces are visually appealing and functional on various devices and screens.'
