@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevScarlet - Frontend Developer
 
-## Getting Started
+Hi there! 👋 I'm Scarlet, a passionate Frontend Developer specializing in creating responsive and visually appealing user interfaces.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Key technologies used for this portfolio:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **React.js**
+- **Next.js**
+- **TailwindCSS**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## About Me
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Frontend development is not just my job; it's my passion. I thrive on challenges, embrace new technologies, and continuously seek to enhance my skills, bringing designs to life on various devices.
 
-## Learn More
+## Skills
 
-To learn more about Next.js, take a look at the following resources:
+- **Languages:** JavaScript, TypeScript, HTML, CSS
+- **Frameworks/Libraries:** React.js, Redux, Next.js, React-Hook-Form, Formik, React Router
+- **Styling:** TailwindCSS, Bootstrap
+- **Version Control:** Git
+- **Backend:** Node, PHP
+- **Design Tools:** Figma, Framer
+- **Database:** MongoDB, Firebase
+- **Content Management:** WordPress
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Featured Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### PsichoMATCH
 
-## Deploy on Vercel
+- **Role:** Frontend Developer
+- **Description:** PsichoMATCH is an innovative online platform connecting individuals seeking counseling or psychological therapy with highly qualified therapists, making support more accessible.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Connect with Me
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to connect on LinkedIn:
+
+- **LinkedIn:** [Scarlet Vargas](https://www.linkedin.com/in/scarletvargas-systems-engineer/)
+
+## Portfolio
+
+Explore my portfolio: [DevScarlet Portfolio](https://devscarlet.vercel.app/)
