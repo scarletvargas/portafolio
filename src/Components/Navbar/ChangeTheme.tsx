@@ -1,9 +1,13 @@
 'use client';
-import { Moon } from '@/Icons/Moon';
-import { Sun } from '@/Icons/Sun';
+
+import { Moon, Sun } from '@/Icons';
 import { useMainContext } from '@/Context/Main.context';
 
-function ChangeTheme({ className }) {
+interface ChangeThemeProps {
+  className?: string;
+}
+
+export const ChangeTheme: React.FC<ChangeThemeProps> = ({ className }) => {
   const { themes, theme, setTheme } = useMainContext();
 
   // Function to handle theme change on button click
@@ -20,9 +24,11 @@ function ChangeTheme({ className }) {
   // Render a button with an icon representing the current theme
   return (
     <button className={className} onClick={handleChangeTheme}>
-      {theme === 'light' ? <Moon /> : <Sun />}
+      {theme === 'light' ? (
+        <Moon className='stroke-secondary hover:stroke-primary h-7 w-7' />
+      ) : (
+        <Sun className='stroke-white hover:stroke-primary h-7 w-7' />
+      )}
     </button>
   );
-}
-
-export default ChangeTheme;
+};
