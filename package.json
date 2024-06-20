@@ -10,9 +10,10 @@
     "lint:fix": "eslint src/ --fix"
   },
   "dependencies": {
-    "next": "14.0.1",
-    "react": "^18",
-    "react-dom": "^18",
+    "next": "^14.2.4",
+    "next-intl": "^3.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "vercel": "^32.5.5"
   },
   "devDependencies": {
