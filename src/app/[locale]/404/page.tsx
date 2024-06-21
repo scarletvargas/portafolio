@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import ButtonPrimary from '@/Components/ButtonPrimary';
+import { ButtonPrimary } from '@/Components';
 
 export default function NotFound() {
   return (

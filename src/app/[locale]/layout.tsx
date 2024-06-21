@@ -3,10 +3,7 @@ import { Poppins } from 'next/font/google';
 import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 
-import Footer from '@/Components/Footer';
-import Navbar from '@/Components/Navbar/Navbar';
-import ScrollToTopButton from '@/Components/ScrollToTopButton';
-
+import { Footer, Navbar, ScrollToTopButton } from '@/Components';
 import { MainProvider } from '@/Context/Main.context';
 
 const poppins = Poppins({
@@ -44,7 +41,7 @@ export default async function LocaleLayout({
             <Navbar />
             {children}
             <ScrollToTopButton />
-            <Footer />
+            <Footer locale={locale} />
           </MainProvider>
         </NextIntlClientProvider>
       </body>
