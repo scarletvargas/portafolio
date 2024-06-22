@@ -1,8 +1,4 @@
-import Carousel from '@/Components/HomePage/Carousel';
-import Hero from '@/Components/HomePage/Hero';
-import MarqueeHero from '@/Components/HomePage/MarqueeHero';
-import SectionProjects from '@/Components/HomePage/SectionProjects';
-import SectionSkills from '@/Components/HomePage/SectionSkills';
+import { Carousel, Hero, MarqueeHero, SectionProjects, SectionSkills } from '@/Components/HomePage';
 
 const HomePage: React.FC = () => {
   return (
