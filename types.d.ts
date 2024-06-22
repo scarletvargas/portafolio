@@ -10,3 +10,10 @@ interface ButtonProps {
   children: React.ReactNode;
   additionalClasses?: string;
 }
+
+interface Project {
+  name: string;
+  description?: string;
+  img: string;
+  url: string;
+}
