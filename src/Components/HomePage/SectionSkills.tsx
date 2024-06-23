@@ -1,13 +1,13 @@
 import { useTranslations } from 'next-intl';
 
 import { CardSkill } from '@/Components/HomePage';
-import { Code, Rocket, Tools, Versions } from '@/Icons';
+import { Code, Rocket, Tools, Server } from '@/Icons';
 
 const iconMapping = {
   Code,
   Rocket,
   Tools,
-  Versions,
+  Server,
 };
 
 export const SectionSkills: React.FC = () => {
@@ -34,7 +34,7 @@ export const SectionSkills: React.FC = () => {
           <p className='font-bold text-sm leading-[14px] text-primary dark:text-sky'>
             {t('title')}
           </p>
-          <h3 className='max-w-[380px] xl:max-w-md font-bold text-secondary dark:text-white text-[28px] leading-[38px] md:text-3xl/10 xl:text-[36px] xl:leading-[46px]'>
+          <h3 className='max-w-[380px] xl:max-w-[420px] font-bold text-secondary dark:text-white text-[28px] leading-[38px] md:text-3xl/10 xl:text-[36px] xl:leading-[46px]'>
             {t('description')}
           </h3>
         </div>

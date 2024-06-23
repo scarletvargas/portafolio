@@ -13,7 +13,7 @@ export const SectionProjects: React.FC = () => {
         <p className='text-center font-bold text-sm leading-[14px] text-primary dark:text-sky'>
           {t('title')}
         </p>
-        <h3 className='text-secondary dark:text-white font-bold text-center text-[28px] md:text-[30px] xl:text-[36px] leading-[38px] md:leading-10 xl:leading-[46px] max-w-[500px]'>
+        <h3 className='text-secondary dark:text-white font-bold text-center text-[28px] md:text-[30px] xl:text-[36px] leading-[38px] md:leading-10 xl:leading-[46px] max-w-[650px]'>
           {t('description')}
         </h3>
       </div>
