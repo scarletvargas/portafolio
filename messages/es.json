@@ -1,0 +1,87 @@
+{
+  "HomePage": {
+    "title": "DevScarlet",
+    "navigation": {
+      "home": "Inicio",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "introduction": {
+      "greeting": "¡Hola! Soy Scarlet",
+      "role": "FullStack Developer"
+    },
+    "aboutMe": {
+      "title": "¿SOBRE MÍ?",
+      "description": "Frontend & Backend Son Mis Habilidades",
+      "skills": [
+        {
+          "title": "Interfaces de usuario responsivas",
+          "description": "Capacidad de transformar diseños en código, asegurando que las interfaces sean visualmente atractivas y funcionales en varios dispositivos y pantallas.",
+          "icon": "Code"
+        },
+        {
+          "title": "Adaptabilidad y Aprendizaje Continuo",
+          "description": "Disposición y capacidad para abordar desafíos, resolver problemas de forma creativa y adoptar nuevas tecnologías.",
+          "icon": "Rocket"
+        },
+        {
+          "title": "Desarrollo Backend y APIs",
+          "description": "Experiencia en la creación de APIs robustas y eficientes utilizando Node.js y Express. Me apasiona optimizar la lógica del servidor, asegurar la integridad y seguridad de los datos.",
+          "icon": "Server"
+        },
+        {
+          "title": "Frameworks y Bibliotecas de Frontend",
+          "description": "Utilización de frameworks y bibliotecas de frontend, como React, Next.js, Redux, TailwindCSS, Formik, React-Hook-Form, para agilizar el desarrollo de aplicaciones web complejas.",
+          "icon": "Tools"
+        }
+      ]
+    },
+    "sectionProjects": {
+      "title": "TRABAJOS DESTACADOS",
+      "description": "He contribuido significativamente a proyectos para lograr los mejores resultados",
+      "button": "Explorar Más"
+    },
+    "footer": {
+      "cta": {
+        "title": {
+          "a": "Creemos un ",
+          "b": "Increíble Proyecto ",
+          "c": "Juntos"
+        },
+        "description": "¡Junto con las tecnologías más nuevas del mercado para crear interfaces de usuario atractivas y/o la creación de APIs robustas! Si tienes alguna pregunta, o simplemente quieres charlar, entonces haz clic en el botón de abajo.",
+        "button": "Contáctame"
+      },
+      "title": "DevScarlet",
+      "description": "Descubre más sobre mí como desarrolladora Full Stack.",
+      "usefulLinks": "Enlaces Útiles",
+      "links": {
+        "projects": "Proyectos",
+        "skills": "Mis Habilidades",
+        "contact": "Contacto"
+      },
+      "contactMe": "Contáctame",
+      "copyright": "Todos los derechos reservados."
+    }
+  },
+  "Projects": [
+    {
+      "name": "PsichoMATCH",
+      "description": "Aplicación para programar citas psicológicas",
+      "url": "https://psichomatch-xrad.vercel.app",
+      "img": "/psichomatch.png"
+    },
+    {
+      "name": "DevScarlet - FullStack Developer",
+      "description": "Sitio web del portafolio personal de Dev Scarlet",
+      "url": "https://devscarlet.vercel.app",
+      "img": "/devscarlet.png"
+    },
+    {
+      "name": "DevScarlet - FullStack Developer",
+      "description": "Sitio web del portafolio personal de Dev Scarlet",
+      "url": "https://devscarlet.vercel.app",
+      "img": "/devscarlet.png"
+    }
+  ]
+}
