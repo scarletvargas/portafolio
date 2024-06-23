@@ -13,7 +13,7 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
 
   return (
     <footer className='bg-navy200 dark:bg-softblue200 text-white dark:text-secondary flex flex-col items-center w-auto pt-[70px]'>
-      <div className='max-w-[350px] md:max-w-[600px] flex flex-col items-center justify-center pb-24 gap-7'>
+      <div className='max-w-[350px] md:max-w-[600px] flex flex-col items-center justify-center pb-20 gap-7'>
         <h3 className='text-center font-bold text-[30px] md:text-[50px] leading-[38px] md:leading-[70px]'>
           {t('cta.title.a')}
           <span className='text-sky dark:text-primary'>{t('cta.title.b')}</span>
@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
         </Link>
       </div>
       <hr className='bg-gray400 dark:bg-gray100 w-[330px] md:w-[700px] xl:w-[1130px] h-[1px] border-0' />
-      <div className='flex flex-col xl:flex-row justify-center items-start pt-24 gap-12 w-[330px] md:w-[700px] xl:w-[1130px]'>
+      <div className='flex flex-col xl:flex-row justify-center items-start pt-20 gap-12 w-[330px] md:w-[700px] xl:w-[1130px]'>
         <div className='flex flex-col gap-7 xl:w-1/3'>
           <h2 className='text-white dark:text-secondary tracking-wide font-bold text-xl/5'>
             DevScarlet
