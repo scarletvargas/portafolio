@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Poppins } from 'next/font/google';
 import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
@@ -13,9 +13,16 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'DevScarlet - Frontend Developer',
+  title: 'DevScarlet - FullStack Developer',
   description:
-    'Explore the world of web development with DevScarlet, a passionate Frontend Developer. Discover innovative projects and captivating web experiences created with React, Next.js, Tailwind CSS, and a variety of frameworks and libraries. Welcome to a journey where aesthetics meets functionality!',
+    'Explore the world of web development with DevScarlet, a passionate FullStack Developer. Discover innovative projects and captivating web experiences created with React, Next.js, Tailwind CSS, Nest.js, Espress.js, and a variety of frameworks and libraries. Welcome to a journey where aesthetics meets functionality!',
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+    { media: '(prefers-color-scheme: dark)', color: '#040217' },
+  ],
 };
 
 interface LocaleLayoutProps {
@@ -31,10 +38,6 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <head>
-        <meta name='theme-color' content='#FFFFFF' media='(prefers-color-scheme: light)' />
-        <meta name='theme-color' content='#040217' media='(prefers-color-scheme: dark)' />
-      </head>
       <body className={poppins.className}>
         <NextIntlClientProvider messages={messages}>
           <MainProvider>
