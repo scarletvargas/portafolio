@@ -64,6 +64,11 @@
       "copyright": "Todos los derechos reservados."
     }
   },
+  "NotFoundPage": {
+    "title": "Página No Encontrada",
+    "goBack": "Volver a la página de inicio",
+    "contactMe": "Contáctame"
+  },
   "Projects": [
     {
       "name": "PsichoMATCH",
