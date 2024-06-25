@@ -13,6 +13,7 @@ const config: Config = {
       animation: {
         marquee: 'marquee 30s linear infinite',
         'marquee-reverse': 'marquee-reverse 30s linear infinite',
+        slideInUp: 'slideInUp 0.2s ease-out both',
       },
       keyframes: {
         marquee: {
@@ -22,6 +23,15 @@ const config: Config = {
         'marquee-reverse': {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(0%)' },
+        },
+        slideInUp: {
+          '0%': {
+            transform: 'translateY(100%)',
+            visibility: 'visible',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+          },
         },
       },
       colors: {
