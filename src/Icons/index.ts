@@ -2,6 +2,7 @@ export * from './ArrowDown';
 export * from './ArrowLeft';
 export * from './ArrowRight';
 export * from './ArrowUp';
+export * from './ArrowUpRight';
 export * from './Bootstrap';
 export * from './Close';
 export * from './Code';
