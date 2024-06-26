@@ -41,7 +41,7 @@ export default async function LocaleLayout({
       <body className={poppins.className}>
         <NextIntlClientProvider messages={messages}>
           <MainProvider>
-            <Navbar />
+            <Navbar locale={locale} />
             {children}
             <ScrollToTopButton />
             <Footer locale={locale} />

@@ -8,7 +8,11 @@ import { ButtonSecond } from '@/Components';
 import { ChangeTheme, ItemNav, LocalSwitcher } from '@/Components/Navbar';
 import { Close, Menu } from '@/Icons';
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+  locale: string;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({ locale }) => {
   const t = useTranslations('HomePage.navigation');
 
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -59,7 +63,7 @@ export const Navbar: React.FC = () => {
           <ul className='hidden md:flex flex-row justify-between items-center sm:gap-5 md:gap-7 font-medium text-base/4'>
             <ItemNav nameItem={t('home')} href='/' />
             <ItemNav nameItem={t('skills')} href='/#skills' />
-            <ItemNav nameItem={t('projects')} href='/projects' />
+            <ItemNav nameItem={t('projects')} href={`/${locale}/projects`} />
             <LocalSwitcher />
             <ChangeTheme className='hidden sm:block' />
             <Link
@@ -90,7 +94,11 @@ export const Navbar: React.FC = () => {
           <ul className='md:hidden flex flex-col py-7 gap-7 items-center justify-center'>
             <ItemNav nameItem={t('home')} href='/' onClick={handleNavLinkClick} />
             <ItemNav nameItem={t('skills')} href='/#skills' onClick={handleNavLinkClick} />
-            <ItemNav nameItem={t('projects')} href='/projects' onClick={handleNavLinkClick} />
+            <ItemNav
+              nameItem={t('projects')}
+              href={`/${locale}/projects`}
+              onClick={handleNavLinkClick}
+            />
             <li>
               <Link
                 target='_blank'
