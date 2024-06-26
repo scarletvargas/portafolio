@@ -16,4 +16,7 @@ interface Project {
   description?: string;
   img: string;
   url: string;
+  images: string[];
+  summary: string[];
+  technologies: string[];
 }
