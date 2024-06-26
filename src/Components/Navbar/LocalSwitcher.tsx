@@ -2,7 +2,7 @@
 
 import { useTransition, useState } from 'react';
 import { useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 import { ArrowDown } from '@/Icons';
 
@@ -10,11 +10,13 @@ export const LocalSwitcher: React.FC = () => {
   const [isPending, startTransition] = useTransition();
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
-  const localActive = useLocale();
+  const pathname = usePathname();
+  const localeActive = useLocale();
 
   const onSelectChange = (locale: string) => {
     startTransition(() => {
-      router.replace(`/${locale}`);
+      const newPathname = pathname.replace(`/${localeActive}`, `/${locale}`);
+      router.replace(newPathname);
     });
     setIsOpen(false);
   };
@@ -30,7 +32,7 @@ export const LocalSwitcher: React.FC = () => {
         onClick={toggleDropdown}
         disabled={isPending}
       >
-        {localActive}
+        {localeActive}
         <ArrowDown className='h-4 w-4' strokeWidth={2.5} />
       </button>
       {isOpen && (
