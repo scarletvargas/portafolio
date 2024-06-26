@@ -1,10 +1,11 @@
 'use client';
-import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
+
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 
 const MainContext = createContext();
 
 export const MainProvider = ({ children }) => {
-  const themes = useMemo(() => ['light', 'dark'], []) ;
+  const themes = useMemo(() => ['dark', 'light'], []);
 
   const [theme, setTheme] = useState(themes[0]);
 
