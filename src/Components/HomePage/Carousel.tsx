@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
-import { ArrowLeft } from '@/Icons/ArrowLeft';
-import { ArrowRight } from '@/Icons/ArrowRight';
+import { ArrowLeft, ArrowRight } from '@/Icons';
+import { formatString } from '@/utils/formatString';
 
 export const Carousel: React.FC = () => {
+  const params = useParams<{ locale: string }>();
   const t = useTranslations();
   const projects = t.raw('Projects');
 
@@ -27,7 +29,7 @@ export const Carousel: React.FC = () => {
 
   return (
     <div className='flex md:hidden justify-center items-center'>
-      <div className='flex justify-center items-center relative px-2.5 pt-2.5 pb-12 max-w-[370px]'>
+      <div className='flex justify-center items-center relative px-2.5 pt-2.5 max-w-[370px]'>
         {currentImage !== 0 && (
           <button
             onClick={previousImage}
@@ -39,7 +41,11 @@ export const Carousel: React.FC = () => {
         {projects.map(
           (project, index) =>
             currentImage === index && (
-              <Link key={index} target='_blank' href={project.url}>
+              <Link
+                key={index}
+                target='_blank'
+                href={`${params.locale}/projects/${formatString(project.name)}`}
+              >
                 <Image
                   width={350}
                   height={270}

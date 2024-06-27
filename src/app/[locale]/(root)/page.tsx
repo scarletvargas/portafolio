@@ -1,4 +1,4 @@
-import { Carousel, Hero, MarqueeHero, SectionProjects, SectionSkills } from '@/Components/HomePage';
+import { Hero, MarqueeHero, SectionProjects, SectionSkills } from '@/Components/HomePage';
 
 const HomePage: React.FC = () => {
   return (
@@ -7,7 +7,6 @@ const HomePage: React.FC = () => {
       <MarqueeHero />
       <SectionSkills />
       <SectionProjects />
-      <Carousel />
     </div>
   );
 };
