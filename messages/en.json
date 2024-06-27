@@ -41,7 +41,8 @@
     "sectionProjects": {
       "title": "FEATURED WORK",
       "description": "I've Contributed Significantly to Projects to Achieve the Best Results",
-      "button": "Explore More"
+      "button": "Explore More",
+      "viewAll": "View All"
     },
     "footer": {
       "cta": {
@@ -70,24 +71,35 @@
     "goBack": "Go back to home page",
     "contactMe": "Contact Me"
   },
+  "ProjectsPage": {
+    "title": "Projects",
+    "description": "Explore some of my projects: collaborations, personal challenges, and more."
+  },
+  "ProjectPage": {
+    "description": "description",
+    "projectDetails": "project details"
+  },
   "Projects": [
     {
       "name": "PsichoMATCH",
       "description": "Application to schedule psychological appointments",
       "url": "https://psichomatch-xrad.vercel.app",
-      "img": "/psichomatch.png"
+      "img": "/psichomatch.png",
+      "images": ["/psichomatch.png", "/psichomatch-2.png", "/psichomatch-3.png", "/psichomatch-4.png"],
+      "summary": [
+        "PsichoMatch is an innovative platform designed for scheduling psychological consultations, facilitating meaningful connections between patients and psychologists. This project, which integrates psychology with technology, offers users a unique experience in discovering psychological profiles and finding compatibilities.",
+        "With a user-friendly and functional interface, PsichoMatch allows users to explore profiles and find affinities based on psychological compatibility. Our goal is to foster strong and trustworthy professional relationships.",
+        "This project was developed as a team effort and represented a very special experience, as it was my first collaborative project with other tech professionals. This collaboration significantly boosted my professional career."
+      ],
+      "technologies": ["Javascript", "React", "Vite", "TailwindCss", "Node", "PostgreSQL", "Figma"]
     },
     {
       "name": "DevScarlet - FullStack Developer",
       "description": "Dev Scarlet's personal portfolio website",
       "url": "https://devscarlet.vercel.app",
-      "img": "/devscarlet.png"
-    },
-    {
-      "name": "DevScarlet - FullStack Developer",
-      "description": "Dev Scarlet's personal portfolio website",
-      "url": "https://devscarlet.vercel.app",
-      "img": "/devscarlet.png"
+      "img": "/devscarlet.png",
+      "images": ["/devscarlet.png", "/devscarlet.png", "/devscarlet.png", "/devscarlet.png"],
+      "summary": ["", ""]
     }
   ]
 }
