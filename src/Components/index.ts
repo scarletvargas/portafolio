@@ -3,7 +3,6 @@ export * from './ButtonPrimary';
 export * from './ButtonSecond';
 export * from './Footer';
 export * from './GetIcon';
-export * from './HomePage/Carousel';
 export * from './HomePage/Hero';
 export * from './HomePage/MarqueeHero';
 export * from './HomePage/SectionProjects';
