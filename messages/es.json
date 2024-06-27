@@ -1,0 +1,104 @@
+{
+  "HomePage": {
+    "title": "DevScarlet",
+    "navigation": {
+      "home": "Inicio",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
+    "introduction": {
+      "greeting": "¡Hola! Soy Scarlet",
+      "role": "FullStack Developer"
+    },
+    "aboutMe": {
+      "title": "¿SOBRE MÍ?",
+      "description": "Frontend & Backend Son Mis Habilidades",
+      "skills": [
+        {
+          "title": "Interfaces de usuario responsivas",
+          "description": "Capacidad de transformar diseños en código, asegurando que las interfaces sean visualmente atractivas y funcionales en varios dispositivos y pantallas.",
+          "icon": "Code"
+        },
+        {
+          "title": "Adaptabilidad y Aprendizaje Continuo",
+          "description": "Disposición y capacidad para abordar desafíos, resolver problemas de forma creativa y adoptar nuevas tecnologías.",
+          "icon": "Rocket"
+        },
+        {
+          "title": "Desarrollo Backend y APIs",
+          "description": "Experiencia en la creación de APIs robustas y eficientes utilizando Node.js y Express. Me apasiona optimizar la lógica del servidor, asegurar la integridad y seguridad de los datos.",
+          "icon": "Server"
+        },
+        {
+          "title": "Frameworks y Bibliotecas de Frontend",
+          "description": "Utilización de frameworks y bibliotecas de frontend, como React, Next.js, Redux, TailwindCSS, Formik, React-Hook-Form, para agilizar el desarrollo de aplicaciones web complejas.",
+          "icon": "Tools"
+        }
+      ]
+    },
+    "sectionProjects": {
+      "title": "TRABAJOS DESTACADOS",
+      "description": "He contribuido significativamente a proyectos para lograr los mejores resultados",
+      "button": "Explorar Más",
+      "viewAll": "Ver Todo"
+    },
+    "footer": {
+      "cta": {
+        "title": {
+          "a": "Creemos un ",
+          "b": "Increíble Proyecto ",
+          "c": "Juntos"
+        },
+        "description": "¡Junto con las tecnologías más nuevas del mercado para crear interfaces de usuario atractivas y/o la creación de APIs robustas! Si tienes alguna pregunta, o simplemente quieres charlar, entonces haz clic en el botón de abajo.",
+        "button": "Contáctame"
+      },
+      "title": "DevScarlet",
+      "description": "Descubre más sobre mí como desarrolladora Full Stack.",
+      "usefulLinks": "Enlaces Útiles",
+      "links": {
+        "projects": "Proyectos",
+        "skills": "Mis Habilidades",
+        "contact": "Contacto"
+      },
+      "contactMe": "Contáctame",
+      "copyright": "Todos los derechos reservados."
+    }
+  },
+  "NotFoundPage": {
+    "title": "Página No Encontrada",
+    "goBack": "Volver a la página de inicio",
+    "contactMe": "Contáctame"
+  },
+  "ProjectsPage": {
+    "title": "Proyectos",
+    "description": "Explora algunos de mis proyectos: colaboraciones, desafíos personales y más."
+  },
+  "ProjectPage": {
+    "description": "descripción",
+    "projectDetails": "Detalles del proyecto"
+  },
+  "Projects": [
+    {
+      "name": "PsichoMATCH",
+      "description": "Aplicación para programar citas psicológicas",
+      "url": "https://psichomatch-xrad.vercel.app",
+      "img": "/psichomatch.png",
+      "images": ["/psichomatch.png", "/psichomatch-2.png", "/psichomatch-3.png", "/psichomatch-4.png"],
+      "summary": [
+        "PsichoMatch es una plataforma innovadora diseñada para agendar consultas psicológicas, facilitando conexiones significativas entre pacientes y psicólogos. Este proyecto, que integra la psicología con la tecnología, ofrece a los usuarios una experiencia única en el descubrimiento de perfiles psicológicos y la búsqueda de compatibilidades.",
+        "Con una interfaz amigable y funcional, PsichoMatch permite a los usuarios explorar perfiles y encontrar afinidades basadas en la compatibilidad psicológica. Nuestro objetivo es fomentar relaciones profesionales sólidas y de confianza.",
+        "Este proyecto fue desarrollado en equipo y representó una experiencia muy especial, ya que fue mi primer proyecto colaborativo con otros profesionales del ámbito tecnológico. Esta colaboración impulsó significativamente mi carrera profesional."
+      ],
+      "technologies": ["Javascript", "React", "Vite", "TailwindCss", "Node", "PostgreSQL", "Figma"]
+    },
+    {
+      "name": "DevScarlet - FullStack Developer",
+      "description": "Sitio web del portafolio personal de Dev Scarlet",
+      "url": "https://devscarlet.vercel.app",
+      "img": "/devscarlet.png",
+      "images": ["/devscarlet.png", "/devscarlet.png", "/devscarlet.png", "/devscarlet.png"],
+      "summary": ["", ""]
+    }
+  ]
+}

@@ -4,3 +4,19 @@ interface IconsProps {
   height?: number;
   strokeWidth?: number;
 }
+
+interface ButtonProps {
+  onClick?: () => void;
+  children: React.ReactNode;
+  additionalClasses?: string;
+}
+
+interface Project {
+  name: string;
+  description?: string;
+  img: string;
+  url: string;
+  images: string[];
+  summary: string[];
+  technologies: string[];
+}
