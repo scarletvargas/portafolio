@@ -41,6 +41,18 @@ export const MarqueeHero: React.FC = () => {
     setScrollStartX(marqueeRef.current!.scrollLeft);
   };
 
+  const handleTouchStart = (event: React.TouchEvent<HTMLDivElement>) => {
+    setIsDragging(true);
+    setPaused(true);
+    setDragStartX(event.touches[0].clientX);
+    setScrollStartX(marqueeRef.current!.scrollLeft);
+  };
+
+  const handleTouchEnd = useCallback(() => {
+    setIsDragging(false);
+    setPaused(false);
+  }, []);
+
   const handleMouseUp = useCallback(() => {
     setIsDragging(false);
     setPaused(false);
@@ -55,18 +67,31 @@ export const MarqueeHero: React.FC = () => {
       setDirection(deltaX > 0 ? -1 : 1);
     };
 
+    const handleTouchMove = (event: TouchEvent) => {
+      if (!isDragging) return;
+      const deltaX = event.touches[0].clientX - dragStartX;
+      marqueeRef.current!.scrollLeft = scrollStartX - deltaX;
+      setDirection(deltaX > 0 ? -1 : 1);
+    };
+
     if (isDragging) {
       document.addEventListener('mousemove', handleMouseMove);
       document.addEventListener('mouseup', handleMouseUp);
+      document.addEventListener('touchmove', handleTouchMove);
+      document.addEventListener('touchend', handleTouchEnd);
     } else {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
     }
     return () => {
       document.removeEventListener('mousemove', handleMouseMove);
       document.removeEventListener('mouseup', handleMouseUp);
+      document.removeEventListener('touchmove', handleTouchMove);
+      document.removeEventListener('touchend', handleTouchEnd);
     };
-  }, [isDragging, dragStartX, scrollStartX, handleMouseUp]);
+  }, [isDragging, dragStartX, scrollStartX, handleMouseUp, handleTouchEnd]);
 
   return (
     <div className='mx-auto max-w-[900px]'>
@@ -74,6 +99,7 @@ export const MarqueeHero: React.FC = () => {
         <div
           ref={marqueeRef}
           onMouseDown={handleMouseDown}
+          onTouchStart={handleTouchStart}
           className='flex gap-6 overflow-x-scroll scrollbar-none cursor-grab active:cursor-grabbing'
         >
           <div
