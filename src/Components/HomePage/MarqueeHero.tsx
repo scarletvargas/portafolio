@@ -3,28 +3,27 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { ItemMarqueeHero } from '@/Components/HomePage';
-import * as Icons from '@/Icons';
 
 const technologies = [
-  { title: 'Javascript', icon: Icons.Javascript },
-  { title: 'Typescript', icon: Icons.Typescript },
-  { title: 'React', icon: Icons.React },
-  { title: 'NextJs', icon: Icons.NextJs },
-  { title: 'Redux', icon: Icons.Redux },
-  { title: 'Node', icon: Icons.Node },
-  { title: 'ExpressJs', icon: Icons.ExpressJs },
-  { title: 'NestJS', icon: Icons.NestJs },
-  { title: 'MySQL', icon: Icons.Mysql },
-  { title: 'MongoDB', icon: Icons.MongoDb },
-  { title: 'Prisma', icon: Icons.Prisma },
-  { title: 'HTML', icon: Icons.HTML },
-  { title: 'CSS', icon: Icons.Css },
-  { title: 'TailwindCSS', icon: Icons.TailwindCss },
-  { title: 'Bootstrap', icon: Icons.Bootstrap },
-  { title: 'Git', icon: Icons.Git },
-  { title: 'PHP', icon: Icons.PHP },
-  { title: 'Figma', icon: Icons.Figma },
-  { title: 'Wordpress', icon: Icons.Wordpress },
+  'Javascript',
+  'Typescript',
+  'React',
+  'NextJs',
+  'Redux',
+  'Node',
+  'ExpressJs',
+  'NestJs',
+  'Mysql',
+  'MongoDb',
+  'Prisma',
+  'HTML',
+  'Css',
+  'TailwindCss',
+  'Bootstrap',
+  'Git',
+  'PHP',
+  'Figma',
+  'Wordpress',
 ];
 
 export const MarqueeHero: React.FC = () => {
@@ -35,24 +34,16 @@ export const MarqueeHero: React.FC = () => {
   const [dragStartX, setDragStartX] = useState(0);
   const [scrollStartX, setScrollStartX] = useState(0);
 
-  const handleMarqueeClick = () => {
-    // Toggle direction
-    setDirection((prevDirection) => prevDirection * -1);
-  };
-
-  const handleMarqueeDoubleClick = () => {
-    // Toggle pause
-    setPaused((prevPaused) => !prevPaused);
-  };
-
   const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
     setIsDragging(true);
+    setPaused(true);
     setDragStartX(event.clientX);
     setScrollStartX(marqueeRef.current!.scrollLeft);
   };
 
   const handleMouseUp = useCallback(() => {
     setIsDragging(false);
+    setPaused(false);
   }, []);
 
   useEffect(() => {
@@ -60,6 +51,8 @@ export const MarqueeHero: React.FC = () => {
       if (!isDragging) return;
       const deltaX = event.clientX - dragStartX;
       marqueeRef.current!.scrollLeft = scrollStartX - deltaX;
+      // Change direction based on drag direction
+      setDirection(deltaX > 0 ? -1 : 1);
     };
 
     if (isDragging) {
@@ -84,25 +77,21 @@ export const MarqueeHero: React.FC = () => {
           className='flex gap-6 overflow-x-scroll scrollbar-none cursor-grab active:cursor-grabbing'
         >
           <div
-            onClick={handleMarqueeClick}
-            onDoubleClick={handleMarqueeDoubleClick}
-            className={`flex shrink-0 items-center flex-row gap-6 ${
-              paused ? '' : `animate-marquee`
-            } ${direction === -1 ? 'animate-marquee-reverse' : ''}`}
+            className={`flex shrink-0 items-center flex-row gap-6 ${!paused && 'animate-marquee'} ${
+              direction === -1 && 'animate-marquee-reverse'
+            }`}
           >
             {technologies.map((tech, i) => (
-              <ItemMarqueeHero key={i} title={tech.title} icon={tech.icon} />
+              <ItemMarqueeHero key={i} iconName={tech} />
             ))}
           </div>
           <div
-            onClick={handleMarqueeClick}
-            onDoubleClick={handleMarqueeDoubleClick}
-            className={`flex shrink-0 items-center flex-row gap-6 ${
-              paused ? '' : `animate-marquee`
-            } ${direction === -1 ? 'animate-marquee-reverse' : ''}`}
+            className={`flex shrink-0 items-center flex-row gap-6 ${!paused && 'animate-marquee'} ${
+              direction === -1 && 'animate-marquee-reverse'
+            }`}
           >
             {technologies.map((tech, i) => (
-              <ItemMarqueeHero key={i} title={tech.title} icon={tech.icon} />
+              <ItemMarqueeHero key={i} iconName={tech} />
             ))}
           </div>
         </div>
