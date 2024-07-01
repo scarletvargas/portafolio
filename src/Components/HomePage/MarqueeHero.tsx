@@ -99,6 +99,7 @@ export const MarqueeHero: React.FC = () => {
         <div
           ref={marqueeRef}
           onMouseDown={handleMouseDown}
+          onTouchStart={handleTouchStart}
           className='flex gap-6 overflow-x-scroll scrollbar-none cursor-grab active:cursor-grabbing'
         >
           <div
