@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import { ButtonPrimary } from '@/Components/ButtonPrimary';
+import { formatString } from '@/utils/formatString';
 
 interface ItemSliderProps {
   index: number;
@@ -21,8 +25,9 @@ export const ItemSlider: React.FC<ItemSliderProps> = ({
   isClasses,
   data,
 }) => {
+  const params = useParams<{ locale: string }>();
   const t = useTranslations('HomePage.sectionProjects');
-  const { img, name, description, url } = data;
+  const { img, name, description } = data;
 
   const imageClass = isFirst ? 'rounded-l-5xl' : isLast ? 'rounded-r-5xl' : '';
   return (
@@ -34,7 +39,7 @@ export const ItemSlider: React.FC<ItemSliderProps> = ({
     >
       <div className='h-[500px] w-auto flex-col justify-center items-center'>
         <Image
-          fill          
+          fill
           alt={name}
           src={img}
           className={`h-full ${
@@ -49,7 +54,7 @@ export const ItemSlider: React.FC<ItemSliderProps> = ({
         <p className='py-2 px-3 bg-white text-secondary text-sm leading-[18px] font-normal rounded-xl shadow-3xl'>
           {description}
         </p>
-        <Link href={url} target='_black'>
+        <Link href={`${params.locale}/projects/${formatString(name)}`}>
           <ButtonPrimary>{t('button')}</ButtonPrimary>
         </Link>
       </div>
