@@ -1,6 +1,6 @@
 # DevScarlet - Frontend Developer
 
-Hi there! 👋 I'm Scarlet, a passionate Frontend Developer specializing in creating responsive and visually appealing user interfaces.
+Hi there! 👋 I'm Scarlet, a passionate Full Stack Developer specializing in creating responsive and visually appealing user interfaces and robust back-end systems.
 
 ## Technologies Used
 
@@ -8,29 +8,22 @@ Key technologies used for this portfolio:
 
 - **React.js**
 - **Next.js**
+- **TypeScript**
 - **TailwindCSS**
 
 ## About Me
 
-Frontend development is not just my job; it's my passion. I thrive on challenges, embrace new technologies, and continuously seek to enhance my skills, bringing designs to life on various devices.
+Frontend & Backend development is not just my job; it's my passion. I thrive on challenges, embrace new technologies, and continuously seek to enhance my skills, bringing designs to life on various devices and creating robust server-side solutions.
 
 ## Skills
 
-- **Languages:** JavaScript, TypeScript, HTML, CSS
-- **Frameworks/Libraries:** React.js, Redux, Next.js, React-Hook-Form, Formik, React Router
-- **Styling:** TailwindCSS, Bootstrap
+- **Languages:** JavaScript, TypeScript, PHP, SQL
+- **Frameworks/Libraries:** React.js, Redux, Next.js, React-Hook-Form, Formik, React Router, Node.js, Espress.js, Nest.js
+- **Database:** MongoDB, MySQL, PostgreSQL
+- **Styling:** TailwindCSS, Bootstrap, Shadcn
+- **Design Tools:** Figma
 - **Version Control:** Git
-- **Backend:** Node, PHP
-- **Design Tools:** Figma, Framer
-- **Database:** MongoDB, Firebase
 - **Content Management:** WordPress
-
-## Featured Projects
-
-### PsichoMATCH
-
-- **Role:** Frontend Developer
-- **Description:** PsichoMATCH is an innovative online platform connecting individuals seeking counseling or psychological therapy with highly qualified therapists, making support more accessible.
 
 ## Connect with Me
 

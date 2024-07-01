@@ -1,4 +1,5 @@
 export * from './Badge';
+export * from './ButtonLink';
 export * from './ButtonPrimary';
 export * from './ButtonSecond';
 export * from './Footer';

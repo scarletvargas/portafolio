@@ -19,7 +19,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, locale }) => 
         width={350}
         height={350}
         className='object-cover h-[260px] object-center rounded-5xl group-hover:opacity-50'
-        src={project.img}
+        src={project.imgProjectsPage}
         alt={project.name}
       />
       <div className='absolute bottom-0 left-0 right-0 z-10 hidden group-hover:flex p-10 items-end h-full'>

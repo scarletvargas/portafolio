@@ -15,7 +15,9 @@ interface Project {
   name: string;
   description?: string;
   img: string;
+  imgProjectsPage: string;
   url: string;
+  urlRepo: string;
   images: string[];
   summary: string[];
   technologies: string[];

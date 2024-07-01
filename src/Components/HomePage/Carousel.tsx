@@ -43,7 +43,6 @@ export const Carousel: React.FC = () => {
             currentImage === index && (
               <Link
                 key={index}
-                target='_blank'
                 href={`${params.locale}/projects/${formatString(project.name)}`}
               >
                 <Image

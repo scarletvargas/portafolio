@@ -76,15 +76,24 @@
   },
   "ProjectPage": {
     "description": "descripción",
-    "projectDetails": "Detalles del proyecto"
+    "projectDetails": "Detalles del proyecto",
+    "website": "Sitio Web",
+    "repository": "Repositorio"
   },
   "Projects": [
     {
       "name": "PsichoMATCH",
       "description": "Aplicación para programar citas psicológicas",
       "url": "https://psichomatch-xrad.vercel.app",
+      "urlRepo": "https://github.com/scarletvargas/C14-09-n-React-Node-Psichomatch",
       "img": "/psichomatch.png",
-      "images": ["/psichomatch.png", "/psichomatch-2.png", "/psichomatch-3.png", "/psichomatch-4.png"],
+      "imgProjectsPage": "/psichomatch-projects-page.png",
+      "images": [
+        "/psichomatch.png",
+        "/psichomatch-2.png",
+        "/psichomatch-3.png",
+        "/psichomatch-4.png"
+      ],
       "summary": [
         "PsichoMatch es una plataforma innovadora diseñada para agendar consultas psicológicas, facilitando conexiones significativas entre pacientes y psicólogos. Este proyecto, que integra la psicología con la tecnología, ofrece a los usuarios una experiencia única en el descubrimiento de perfiles psicológicos y la búsqueda de compatibilidades.",
         "Con una interfaz amigable y funcional, PsichoMatch permite a los usuarios explorar perfiles y encontrar afinidades basadas en la compatibilidad psicológica. Nuestro objetivo es fomentar relaciones profesionales sólidas y de confianza.",
@@ -93,12 +102,18 @@
       "technologies": ["Javascript", "React", "Vite", "TailwindCss", "Node", "PostgreSQL", "Figma"]
     },
     {
-      "name": "DevScarlet - FullStack Developer",
-      "description": "Sitio web del portafolio personal de Dev Scarlet",
-      "url": "https://devscarlet.vercel.app",
-      "img": "/devscarlet.png",
-      "images": ["/devscarlet.png", "/devscarlet.png", "/devscarlet.png", "/devscarlet.png"],
-      "summary": ["", ""]
+      "name": "Weather App",
+      "description": "Aplicación de pronóstico del clima",
+      "url": "https://weather-app-devscarlet.vercel.app/",
+      "urlRepo": "https://github.com/scarletvargas/weather-app",
+      "img": "/weather-app.png",
+      "imgProjectsPage": "/weather-app-projects-page.png",
+      "images": ["/weather-app.png", "/weather-app-2.png"],
+      "summary": [
+        "WeatherApp es una aplicación de clima que te permite obtener información detallada sobre el clima actual y pronósticos extendidos para cualquier ubicación del mundo. Con una interfaz intuitiva y fácil de usar, WeatherApp te mantiene informado sobre las condiciones climáticas en tiempo real y te ayuda a planificar tus actividades al aire libre.",
+        "En la página de inicio, puedes buscar una ciudad específica en el cuadro de búsqueda o hacer clic en el ícono de ubicación actual para obtener el clima basado en tu ubicación. Selecciona una de las sugerencias de la lista desplegable o presiona Enter para realizar la búsqueda. Una vez que se carguen los datos, podrás ver el clima actual y el pronóstico extendido para esa ubicación."
+      ],
+      "technologies": ["React", "NextJs", "Typescript", "TailwindCss"]
     }
   ]
 }
